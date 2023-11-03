@@ -1,8 +1,12 @@
+.portfolio {
+  font-family: Verdana, monospace;
+}
 .header {
   position: fixed;
   width: 100%;
   background-color: #000000;
   color: white;
+  padding: 20px;
   top: 0;
   left: 0;
 }
@@ -10,24 +14,169 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 20px;
 }
 .header-content li {
   list-style: none;
   display: inline;
+  margin-right: 25px;
+}
+.header-content a {
+  color: white;
+  text-decoration: none;
 }
 .portfolio-content {
   text-align: center;
 }
 h2 {
   font-size: 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-bottom: 0;
   margin-top: 50px;
 }
 h3 {
   font-size: 50px;
+  font-family: "ＭＳ Ｐ明朝";
+  font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
 }
 .about {
   padding-top: 100px;
+}
+.about-content {
+  display: flex;
+}
+.about-image,
+.about-detail {
+  flex: 1;
+}
+.about-image img {
+  width: 60%;
+  padding-left: 300px;
+}
+.about-detail p {
+  font-size: 22px;
+  text-align: left;
+  margin: 12px 0 12px 50px;
+}
+.career-content {
+  font-size: 20px;
+}
+.skill-content {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2px 2px;
+  margin: 0 20%;
+}
+.skill-detail {
+  width: 28%;
+}
+.skill-detail p {
+  text-align: center;
+}
+.skill-content::after {
+  content: "";
+  display: block;
+  width: 28%;
+}
+.skill-detail img {
+  width: 50%;
+}
+.flask img {
+  margin-top: 38.64px;
+}
+.contact-content {
+  display: flex;
+  justify-content: center;
+}
+.contact-logo {
+  width: 5%;
+}
+.contact-content img {
+  width: 60%;
+}
+.wantedly-logo img {
+  width: 40%;
+  margin-top: 15px;
+}
+.qiita-logo img {
+  width: 50%;
+  margin-top: 5px;
+}
+/* loading画面 */
+.loading {
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.spinner {
+  margin: 400px auto;
+  width: 80px;
+  height: 60px;
+  text-align: center;
+  font-size: 10px;
+}
+.spinner > div {
+  background-color: #333;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+.spinner p {
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+}
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+.spinner .rect3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+@-webkit-keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+@keyframes sk-stretchdelay {
+  0%,
+  40%,
+  100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
 }

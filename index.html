@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+    />
     <title>YONEDA's Portfolio</title>
   </head>
   <body>
@@ -18,11 +28,11 @@
       </div>
     </div>
     <div class="portfolio">
-      <div class="header">
+      <header>
         <div class="header-content">
           <h1>YONEDA's Portfolio</h1>
           <ul>
-            <li><a href="#About">ABOUT</a></li>
+            <li><a href="#About">PROFILE</a></li>
             <li><a href="#Works">WORKS</a></li>
             <li><a href="#Career">CAREER</a></li>
             <li><a href="#Skill">SKILL</a></li>
@@ -30,20 +40,22 @@
             <li><a href="#Contact">CONTACT</a></li>
           </ul>
         </div>
-      </div>
+      </header>
       <div class="portfolio-content">
         <div class="about" id="About">
-          <h2>ABOUT</h2>
+          <h2>PROFILE</h2>
           <h3>自己紹介</h3>
           <div class="about-content">
-            <div class="about-image">
+            <div class="about-image flex-1">
               <img src="./media/profile-photo/profile.jpg" alt="Shogo Yoneda" />
             </div>
-            <div class="about-detail">
-              <p style="font-weight: bold">米田匠吾 / SHOGO YONEDA</p>
+            <div class="about-detail flex-1">
+              <p style="font-size: 30px; font-weight: bold">
+                米田匠吾 / SHOGO YONEDA
+              </p>
               <p>生年月日：2002年9月20日</p>
               <p>身長：179cm</p>
-              <p>体重：72cm</p>
+              <p>体重：72kg</p>
               <p>体脂肪率：12%</p>
               <p>趣味：筋トレ、ダーツ</p>
               <p>目標：将来はフルスタックを目指してます！</p>
@@ -71,13 +83,17 @@
         <div class="skill" id="Skill">
           <h2>SKILL</h2>
           <h3>経験のある技術</h3>
-          <div class="skill-content">
+          <div class="skill-content autoplay">
             <div class="python skill-detail">
               <img src="./media/skill/python-logo.png" alt="python" />
               <div class="python-content"><p>Python</p></div>
             </div>
             <div class="flask skill-detail">
-              <img src="./media/skill/flask-logo.png" alt="flask" />
+              <img
+                style="padding-top: 20px"
+                src="./media/skill/flask-logo.png"
+                alt="flask"
+              />
               <p>Flask</p>
             </div>
             <div class="django skill-detail">
@@ -110,12 +126,36 @@
           <h2>INTERNSHIP</h2>
           <h3>インターン経験</h3>
           <div class="quick">
-            <img src="./media/company/quick-logo.jpeg" alt="quick" />
-            <p>株式会社QUICK 2022/10/17〜2022/12/19</p>
+            <div class="quick-image flex-1">
+              <a href="https://corporate.quick.co.jp/" target="_blank"
+                ><img src="./media/company/quick-logo.jpeg" alt="quick"
+              /></a>
+            </div>
+            <div class="internship-detail flex-1">
+              <p class="internship-name">株式会社QUICK</p>
+              <p>期間：2022/10/17〜2022/12/19</p>
+              <p style="width: 57%; text-align: justify">
+                日本経済新聞社グループの金融情報サービス会社として、<br />世界の証券・金融情報をはじめ、政治・経済情報をリアルタイムで配信。<br />
+                資産運用支援、注文執行業務の支援、情報ネットワーク構築支援サービスなど、証券・金融市場に関連する総合的なソリューションの提供。
+              </p>
+            </div>
           </div>
           <div class="refine">
-            <img src="./media/company/Refine_logo.png" alt="refine" />
-            <p>株式会社Refine 2023/5/15〜</p>
+            <div class="refine-image flex-1">
+              <a href="https://www.re-fine.jp/" target="_blank"
+                ><img src="./media/company/Refine_logo.png" alt="refine"
+              /></a>
+            </div>
+            <div class="internship-detail flex-1">
+              <p class="internship-name">株式会社Refine</p>
+              <p>期間：2023/5/15〜</p>
+              <p style="width: 58%; text-align: justify">
+                ECサイトの企画・制作 / ECシステム開発 / ECコンサルティング /<br />
+                D2Cブランド アパレル・食品の企画・開発・運営 /
+                SNSコンサルティング /<br />
+                WEBサイトの企画・制作 / WEBシステム開発・AWSサーバ運用支援
+              </p>
+            </div>
           </div>
         </div>
         <div class="contact" id="Contact">
@@ -147,12 +187,36 @@
           </div>
         </div>
       </div>
+      <footer><p>Copyright © 2023 SHOGO YONEDA</p></footer>
     </div>
+    <!-- lading画面 -->
     <script type="text/JavaScript">
       window.onload = function () {
         const spinner = document.getElementById("loading");
         spinner.classList.add("loaded");
       };
+    </script>
+    <!-- slick-slider -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      $(".autoplay").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        centerMode: true,
+        dots: false,
+        arrows: true,
+        infinite: true,
+      });
     </script>
   </body>
 </html>

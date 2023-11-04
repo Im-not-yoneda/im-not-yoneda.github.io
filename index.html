@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -61,17 +61,62 @@
               <p class="about-name">米田匠吾 / SHOGO YONEDA</p>
               <p>生年月日：2002年9月20日</p>
               <p>身長：179cm</p>
-              <p>体重：72kg</p>
-              <p>体脂肪率：12%</p>
               <p>趣味：筋トレ、ダーツ</p>
-              <p>目標：将来はフルスタックを目指してます！</p>
+              <p>志望：エンジニア</p>
+              <p>
+                動機：10本の指で世界に影響を与えられることに可能性と夢を感じたため
+              </p>
+              <p>目標：5年以内にフルスタックエンジニア</p>
             </div>
           </div>
         </div>
         <div class="works" id="Works">
           <h2>WORKS</h2>
           <h3>制作物</h3>
-          <div class="works-content"><p>作成中...</p></div>
+          <div class="works-content">
+            <div class="dog works-detail">
+              <div class="google-slide">
+                <iframe
+                  src="https://docs.google.com/presentation/d/e/2PACX-1vRTrEjzEVc8cO6NuHZ9OpzbkWJ9hQdILIlOTty5vQVCHtN6PtYK-PbiUYHv56wbdeuA7G-MnZ4ZBBV_/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0"
+                  width="768"
+                  height="455"
+                  allowfullscreen="true"
+                  mozallowfullscreen="true"
+                  webkitallowfullscreen="true"
+                ></iframe>
+              </div>
+              <div class="description">
+                <p class="description-title">犬の画像ランダム生成サイト</p>
+                <p class="description-language">使用言語：Javascript/React</p>
+                <p class="description-text">
+                  Reactの勉強のため最初に作成した。Javascriptに触れるのも初めてだったので、基礎の記述の方法から学んだ。<br />
+                  他にもAPIのリクエストの方法、ドロップダウンの値の受け渡しなどを学んだ。
+                </p>
+              </div>
+            </div>
+            <div class="bbs works-detail">
+              <div class="google-slide">
+                <iframe
+                  src="https://docs.google.com/presentation/d/e/2PACX-1vRYFmILX4XKVBOqdQx_qdVq941ujFMQEerqIrrWArDXo6iCPOWSA7P4d6JxiUChvr3mAmJwYXDH4kYl/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0"
+                  width="768"
+                  height="455"
+                  allowfullscreen="true"
+                  mozallowfullscreen="true"
+                  webkitallowfullscreen="true"
+                ></iframe>
+              </div>
+              <div class="description">
+                <p class="description-title">掲示板サイト</p>
+                <p class="description-language">使用言語：Javascript/React</p>
+                <p class="description-text">
+                  Reactの勉強のため作成した。APIから取得してきたデータの扱い、POST/GETの送信、特徴であるコンポーネントベースの開発ができた。<br />
+                  また、実際に現役エンジニアにコードチェックをしていただき、非同期処理の技術選択や可読性など言及があり、学びに繋がった。
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="career" id="Career">
           <h2>CAREER</h2>
@@ -125,6 +170,10 @@
             <div class="css skill-detail">
               <img src="./media/skill/css3-vector.png" alt="css" />
               <p>CSS</p>
+            </div>
+            <div class="git skill-detail">
+              <img src="./media/skill/git-logo.png" alt="git" />
+              <p>git</p>
             </div>
           </div>
         </div>
@@ -213,7 +262,6 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
     ></script>
-
     <script type="text/javascript">
       $(".autoplay").slick({
         slidesToShow: 3,

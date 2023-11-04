@@ -72,6 +72,25 @@ h3 {
   text-align: left;
   margin: 12px 0 12px 50px;
 }
+.works-detail {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 40px;
+}
+.description {
+  font-size: 20px;
+  text-align: left;
+  margin-left: 20px;
+}
+.description-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.description-text {
+  text-align: justify;
+}
 .career-content {
   font-size: 20px;
 }

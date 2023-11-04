@@ -53,6 +53,10 @@ h3 {
   display: flex;
   margin: 0 auto;
 }
+.about-name {
+  font-size: 30px;
+  font-weight: bold;
+}
 .flex-1 {
   flex: 1;
 }
@@ -236,4 +240,94 @@ footer {
 }
 .skill-content .slick-slide img {
   display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .pc-only {
+    display: none;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .header-content {
+    display: block;
+  }
+  .header-content ul {
+    display: none;
+  }
+  h2 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .about-content {
+    display: inline-block;
+  }
+  .about-detail .about-name {
+    font-size: 20px;
+  }
+  .about-image img {
+    padding: 0;
+  }
+  .about-detail {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .about-detail p {
+    text-align: left;
+    font-size: 15px;
+    margin: 0 0 0 15%;
+  }
+  .works-content {
+    margin-bottom: 50px;
+  }
+  .career-content {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  .career-content p {
+    font-size: 15px;
+    margin: 0;
+  }
+  .slick-prev {
+    left: -60px !important;
+  }
+  .slick-next {
+    right: -40px !important;
+  }
+  .skill-content p {
+    font-size: 15px;
+  }
+  .skill-content {
+    margin-bottom: 50px;
+  }
+  .quick,
+  .refine {
+    display: inline-block;
+  }
+  .quick-image img {
+    width: 50%;
+    padding: 0;
+  }
+  .internship-detail p {
+    text-align: center;
+    margin-bottom: 10px;
+    margin: auto;
+  }
+  .refine-image img {
+    width: 70%;
+    padding: 0;
+  }
+  .quick .quick-detail,
+  .refine .refine-detail {
+    margin-top: 15px;
+  }
+  .refine {
+    margin-bottom: 50px;
+  }
+  .contact-logo {
+    width: 30%;
+  }
 }

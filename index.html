@@ -58,9 +58,7 @@
               <img src="./media/profile-photo/profile.jpg" alt="Shogo Yoneda" />
             </div>
             <div class="about-detail flex-1">
-              <p style="font-size: 30px; font-weight: bold">
-                米田匠吾 / SHOGO YONEDA
-              </p>
+              <p class="about-name">米田匠吾 / SHOGO YONEDA</p>
               <p>生年月日：2002年9月20日</p>
               <p>身長：179cm</p>
               <p>体重：72kg</p>
@@ -73,7 +71,7 @@
         <div class="works" id="Works">
           <h2>WORKS</h2>
           <h3>制作物</h3>
-          <p>作成中...</p>
+          <div class="works-content"><p>作成中...</p></div>
         </div>
         <div class="career" id="Career">
           <h2>CAREER</h2>
@@ -142,7 +140,7 @@
             <div class="internship-detail flex-1">
               <p class="internship-name">株式会社QUICK</p>
               <p>期間：2022/10/17〜2022/12/19</p>
-              <p style="width: 57%; text-align: justify">
+              <p class="quick-detail" style="width: 57%; text-align: justify">
                 日本経済新聞社グループの金融情報サービス会社として、<br />世界の証券・金融情報をはじめ、政治・経済情報をリアルタイムで配信。<br />
                 資産運用支援、注文執行業務の支援、情報ネットワーク構築支援サービスなど、証券・金融市場に関連する総合的なソリューションの提供。
               </p>
@@ -157,10 +155,12 @@
             <div class="internship-detail flex-1">
               <p class="internship-name">株式会社Refine</p>
               <p>期間：2023/5/15〜</p>
-              <p style="width: 58%; text-align: justify">
-                ECサイトの企画・制作 / ECシステム開発 / ECコンサルティング /<br />
+              <p class="refine-detail" style="width: 58%; text-align: justify">
+                ECサイトの企画・制作 / ECシステム開発 / ECコンサルティング /<br
+                  class="pc-only"
+                />
                 D2Cブランド アパレル・食品の企画・開発・運営 /
-                SNSコンサルティング /<br />
+                SNSコンサルティング /<br class="pc-only" />
                 WEBサイトの企画・制作 / WEBシステム開発・AWSサーバ運用支援
               </p>
             </div>
@@ -224,6 +224,7 @@
         dots: false,
         arrows: true,
         infinite: true,
+        responsive: [{ breakpoint: 768, settings: { slidesToShow: 1 } }],
       });
     </script>
   </body>

@@ -301,6 +301,25 @@ footer {
   .works-content {
     margin-bottom: 50px;
   }
+  .works-detail {
+    display: inline-block;
+  }
+  .google-slide iframe {
+    width: 100%;
+  }
+  .description {
+    text-align: center;
+    margin: 0;
+  }
+  .description-title {
+    font-size: 20px;
+  }
+  .description-language {
+    font-size: 18px;
+  }
+  .description-text {
+    font-size: 16px;
+  }
   .career-content {
     width: 80%;
     margin: auto;

@@ -256,13 +256,6 @@
       </div>
       <footer><p>Copyright © 2023 SHOGO YONEDA</p></footer>
     </div>
-    <!-- lading画面 -->
-    <script type="text/JavaScript">
-      window.onload = function () {
-        const spinner = document.getElementById("loading");
-        spinner.classList.add("loaded");
-      };
-    </script>
     <!-- slick-slider -->
     <script
       type="text/javascript"
@@ -272,18 +265,6 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
     ></script>
-    <script type="text/javascript">
-      $(".autoplay").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        centerMode: true,
-        dots: false,
-        arrows: true,
-        infinite: true,
-        responsive: [{ breakpoint: 768, settings: { slidesToShow: 1 } }],
-      });
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>

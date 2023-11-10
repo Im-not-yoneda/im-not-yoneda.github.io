@@ -22,6 +22,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
     />
+    <link
+      rel="apple-touch-icon"
+      href="./media/profile-photo/apple-touch-icon.png"
+      sizes="180×180"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./media/profile-photo/favicon.ico"
+    />
     <title>YONEDA's Portfolio</title>
   </head>
   <body>
@@ -90,7 +100,7 @@
                 <p class="description-title">犬の画像ランダム生成サイト</p>
                 <p class="description-language">使用言語：Javascript/React</p>
                 <p class="description-text">
-                  Reactの勉強のため最初に作成した。Javascriptに触れるのも初めてだったので、基礎の記述の方法から学んだ。<br />
+                  Reactの勉強のため最初に作成した。Javascriptに触れるのも初めてだったため、基礎の記述の方法から学んだ。<br />
                   他にもAPIのリクエストの方法、ドロップダウンの値の受け渡しなどを学んだ。
                 </p>
               </div>
@@ -126,7 +136,7 @@
             <p>データサイエンス学部データサイエンス学科</p>
             <p>2025卒</p>
             <p>
-              Pythonを主に用い、ビッグデータの分析、人工知能の適用手法、倫理などを学んだ。<br />
+              Pythonを主に用いて、ビッグデータの分析、人工知能の適用手法、倫理などを学んだ。<br />
               授業はグループワーク主体で、協働しながら課題の議論を重ねた。
             </p>
           </div>
@@ -246,13 +256,6 @@
       </div>
       <footer><p>Copyright © 2023 SHOGO YONEDA</p></footer>
     </div>
-    <!-- lading画面 -->
-    <script type="text/JavaScript">
-      window.onload = function () {
-        const spinner = document.getElementById("loading");
-        spinner.classList.add("loaded");
-      };
-    </script>
     <!-- slick-slider -->
     <script
       type="text/javascript"
@@ -262,18 +265,6 @@
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
     ></script>
-    <script type="text/javascript">
-      $(".autoplay").slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        centerMode: true,
-        dots: false,
-        arrows: true,
-        infinite: true,
-        responsive: [{ breakpoint: 768, settings: { slidesToShow: 1 } }],
-      });
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>

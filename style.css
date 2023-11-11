@@ -53,9 +53,27 @@ h3 {
   display: flex;
   margin: 0 auto;
 }
-.about-name {
+.about-detail .about-name {
   font-size: 30px;
   font-weight: bold;
+  margin: 0 20px;
+}
+.table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  width: 100%;
+}
+.table .row {
+  display: table-row;
+}
+.table p {
+  display: table-cell;
+  vertical-align: middle;
+}
+.about-detail .row p:first-child {
+  text-align: right;
+  vertical-align: top;
 }
 .flex-1 {
   flex: 1;
@@ -72,7 +90,6 @@ h3 {
 .about-detail p {
   font-size: 22px;
   text-align: left;
-  margin: 12px 0 12px 35px;
 }
 .works-detail {
   display: flex;
@@ -289,6 +306,7 @@ footer {
   }
   .about-detail .about-name {
     font-size: 20px;
+    margin: 0;
   }
   .about-image img {
     padding: 0;

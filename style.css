@@ -307,6 +307,18 @@ footer {
   .about-detail .about-name {
     font-size: 20px;
     margin: 0;
+    text-align: center;
+  }
+  .table {
+    width: 90%;
+    margin: auto;
+    table-layout: auto;
+  }
+  .table .row p {
+    min-width: 85px;
+  }
+  .about-image {
+    text-align: center;
   }
   .about-image img {
     padding: 0;

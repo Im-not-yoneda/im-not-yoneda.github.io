@@ -402,4 +402,7 @@ footer {
   .contact-logo {
     width: 30%;
   }
+  .spinner {
+    margin-top: 295px;
+  }
 }

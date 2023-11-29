@@ -23,8 +23,8 @@ header {
   display: inline;
   margin-right: 25px;
 }
-.header-content li:hover {
-  font-size: 20px;
+.header-content li a:hover {
+  color: rgba(255, 255, 255, 0.8);
 }
 .header-content a {
   color: white;
@@ -152,16 +152,21 @@ h3 {
 .quick,
 .refine {
   display: flex;
+  align-items: center;
 }
 .quick-image img {
   width: 50%;
   padding-left: 40%;
-  padding-top: 50px;
+}
+.quick-image img:hover {
+  opacity: 0.8;
 }
 .refine-image img {
   width: 60%;
   padding-left: 40%;
-  padding-top: 40px;
+}
+.refine-image img:hover {
+  opacity: 0.8;
 }
 .internship-detail {
   text-align: left;

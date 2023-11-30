@@ -106,7 +106,7 @@ h3 {
 .description-title {
   font-size: 30px;
   font-weight: bold;
-  text-align: center;
+  text-align: left;
 }
 .description-text {
   text-align: justify;
@@ -352,6 +352,7 @@ footer {
   }
   .description-title {
     font-size: 20px;
+    text-align: center;
   }
   .description-language {
     font-size: 18px;

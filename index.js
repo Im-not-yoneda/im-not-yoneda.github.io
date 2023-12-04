@@ -19,6 +19,13 @@ $(".autoplay").slick({
 
 // 題名のフェードイン
 $(function () {
+  $(".first-title")
+    .delay(2000)
+    .queue(function () {
+      $(this).addClass("scroll");
+    });
+});
+$(function () {
   $(window).scroll(function () {
     $("h3,h2").each(function () {
       const pos = $(this).offset().top;

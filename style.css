@@ -38,6 +38,7 @@ h2 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-bottom: 0;
   margin-top: 100px;
+  filter: blur(100px);
 }
 h3 {
   font-size: 50px;
@@ -45,6 +46,7 @@ h3 {
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 10px;
+  filter: blur(100px);
 }
 .about {
   padding-top: 100px;
@@ -288,6 +290,15 @@ footer {
 }
 #menu-btn-check {
   display: none;
+}
+/* fadeIn */
+.scroll {
+  animation: blur-animation 0.8s ease-in-out forwards;
+}
+@keyframes blur-animation {
+  100% {
+    filter: blur(0);
+  }
 }
 @media screen and (max-width: 768px) {
   .pc-only {

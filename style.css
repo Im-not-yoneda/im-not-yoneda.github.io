@@ -38,6 +38,10 @@ h2 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-bottom: 0;
   margin-top: 100px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: opacity 1s, visibility 1s, transform 1s;
 }
 h3 {
   font-size: 50px;
@@ -45,6 +49,10 @@ h3 {
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: opacity 1s, visibility 1s, transform 1s;
 }
 .about {
   padding-top: 100px;
@@ -288,6 +296,12 @@ footer {
 }
 #menu-btn-check {
   display: none;
+}
+/* fadeIn */
+.scroll {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
 }
 @media screen and (max-width: 768px) {
   .pc-only {
